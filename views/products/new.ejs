@@ -1,0 +1,29 @@
+<%include ../layout/header %>
+<div id="add" class="container2 col-sm-6 col-md-4 col-sm-offset-2 col-md-offset-4" style="padding: 1%;">
+
+<form action="/products/add" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="email">Name:</label>
+    <input type="text" class="form-control" name="name" required>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Price:</label>
+    <input type="text" class="form-control" name="price" required>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Description:</label>
+    <input type="text" class="form-control" name="desc" required>
+  </div>
+  <div class="form-group  ">
+      <label  class="" for="">Choose img</label>
+      <input type="file" name="avatar" class="form-control">
+  </div>
+
+  <div class="form-group col-md-offset-9">
+      <input type="hidden" class="form-control" name="owner" value="<%=owner%>">
+      <button class=" btn btn-primary" type="sumbit">add</button>
+
+  </div>
+</form>
+</div>
+<%include ../layout/footer %>

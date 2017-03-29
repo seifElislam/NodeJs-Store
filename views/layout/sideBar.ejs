@@ -1,0 +1,63 @@
+<div class=" btn-group .btn-group-justified col-md-offset-4 col-md-6">
+  <button id="blist" type="button" class="btn btn-primary" onclick="listFunction()">List All Products</button>
+  <button id="bnew" type="button" class="btn btn-primary" onclick="myFunction()">Add New Product </button>
+  <button id="bedit" type="button" class="btn btn-primary" onclick="editFunction()">Update product</button>
+</div>
+<script>
+       function myFunction() {
+       var x = document.getElementById('add');
+       var y = document.getElementById('list');
+       var z = document.getElementById('edit');
+         var s = document.getElementById('search');
+       if (x.style.display === 'none') {
+           x.style.display = 'block';
+           y.style.display = 'none';
+           z.style.display = 'none';
+           s.style.display = 'none';
+       } else {
+           x.style.display = 'none';
+       }
+     }
+     function editFunction() {
+       var x = document.getElementById('add');
+       var y = document.getElementById('list');
+       var z = document.getElementById('edit');
+         var s = document.getElementById('search');
+     if (z.style.display === 'none') {
+       z.style.display = 'block';
+       x.style.display = 'none';
+       y.style.display = 'none';
+       s.style.display = 'none';
+     } else {
+         z.style.display = 'none';
+     }
+   }
+   function listFunction() {
+     var x = document.getElementById('add');
+     var y = document.getElementById('list');
+     var z = document.getElementById('edit');
+       var s = document.getElementById('search');
+   if (y.style.display === 'none') {
+     y.style.display = 'block';
+     x.style.display = 'none';
+     z.style.display = 'none';
+     s.style.display = 'none';
+   } else {
+       y.style.display = 'none';
+   }
+ }
+ function searchFunction() {
+   var x = document.getElementById('add');
+   var y = document.getElementById('list');
+   var z = document.getElementById('edit');
+   var s = document.getElementById('search');
+ if (s.style.display === 'none') {
+   s.style.display = 'block';
+   x.style.display = 'none';
+   z.style.display = 'none';
+   y.style.display = 'none';
+ } else {
+     s.style.display = 'none';
+ }
+}
+ </script>
